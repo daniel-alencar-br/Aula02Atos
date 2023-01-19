@@ -1,0 +1,31 @@
+﻿
+@model Aula02Atos.Models.Alunos
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Incluir Aluno Tipado</title>
+</head>
+<body>
+    <div>
+
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(B => B.ID);<br /><br />
+            @Html.TextBoxFor(B => B.ID); <br /><br />
+            @Html.LabelFor(B => B.Nome);<br /><br />
+            @Html.TextBoxFor(B => B.Nome);<br /><br />
+            @Html.LabelFor(B => B.CPF);<br /><br />
+            @Html.TextBoxFor(B => B.CPF);<br /><br />
+            <input type="submit" value="Enviar" />
+        }
+
+    </div>
+</body>
+</html>

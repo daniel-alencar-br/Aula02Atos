@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Incluir um Aluno</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.Label("Codigo")<br />
+            @Html.TextBox("id")<br />
+            @Html.Label("Nome")<br />
+            @Html.TextBox("Nome")<br />
+            <input type="submit" value="Enviar"/>
+        }
+    </div>
+</body>
+</html>
